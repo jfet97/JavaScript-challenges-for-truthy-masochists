@@ -5,13 +5,13 @@ You cannot use loops neither the current index and source array arguments that a
 
 ### Example
 ```js
-[1,2,3,4,5,6,7,8] -> [1, 5, 7, 8]
+[1,2,3,4,5,6,7,8] -> [1, 3, 5, 7, 8]
 ```
 | Element      | Sum of previous | Sum of following | Result | Why
 | :----:       |    :----:       |    :----:   |    :----: | :----: |
 | 1       | -       | 35  | in | first element
 | 2       | 1       | 33  | out | both odd
-| 3       | 2       | 30  | out | both even
+| 3       | 3       | 30  | in | odd, even
 | 4       | 6       | 26  | out | both even
 | 5       | 10      | 21  | in | even, odd
 | 6       | 15      | 15  | out | both odd
